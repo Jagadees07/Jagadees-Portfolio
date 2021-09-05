@@ -94,7 +94,7 @@
   background-color: var(--secondary);
   color: var(--primary);
 }
-/* .code-symbol {
+.code-symbol {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +103,7 @@
   margin-top: 50px;
   color: var(--primary-light);
   font-family: "Kalam", cursive;
-} */
+}
 
 /*------- ABOUT -------*/
 .about {
@@ -120,7 +120,7 @@
   height: 2px;
   width: 100px;
 }
-@media (min-width: 425px) {
+@media (max-width: 425px) {
   body {
     overflow-x: none;
   }
