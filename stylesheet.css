@@ -1,0 +1,118 @@
+:root {
+  --primary: #1e242c;
+  --secondary: #08fdd8;
+  --primary-light: #364150;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+/*-------- NAVBAR ---------*/
+.navbar {
+  background: var(--primary);
+}
+.navbar-brand {
+  color: white;
+}
+.nav-link {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 15px;
+}
+.nav-link:hover {
+  color: var(--secondary);
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  background-color: var(--secondary);
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 300ms;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+  color: white !important;
+}
+.contact-btn {
+  border: 2px solid var(--secondary);
+  border-radius: 30px;
+  color: var(--secondary);
+  font-weight: 500;
+  margin-top: 2px;
+  padding: 4px 15px 5px 15px;
+  text-align: center;
+}
+.contact-btn:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+/*------- BANNER -------*/
+.banner {
+  /* margin-top: 80px; */
+  background-color: var(--primary);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-content {
+  font-family: "Kalam", cursive;
+  font-size: 70px;
+  margin-top: 100px;
+}
+.intro-content-para {
+  font-size: 30px;
+  font-family: "Kalam", cursive;
+  color: #4c5b70;
+}
+.download-btn {
+  border: 2px solid var(--secondary);
+  border-radius: 30px;
+  color: var(--secondary);
+  font-weight: 500;
+  margin-top: 2px;
+  padding: 4px 15px 5px 15px;
+  text-align: center;
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+.download-btn:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+.code-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 400px;
+  margin-top: 50px;
+  color: var(--primary-light);
+  font-family: "Kalam", cursive;
+}
+
+@media (min-width: 425px) {
+  body {
+    overflow-x: none;
+  }
+  .navbar-brand {
+    margin-left: 20px;
+  }
+  .code-symbol {
+    display: none;
+  }
+}
+@media (min-width: 768) {
+}
