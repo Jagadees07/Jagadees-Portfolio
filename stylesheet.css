@@ -27,6 +27,7 @@
   font-weight: 400;
   margin-right: 15px;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 .nav-link:hover {
   color: var(--secondary);
@@ -50,11 +51,18 @@
   font-weight: 500;
   margin-top: 2px;
   padding: 4px 15px 5px 15px;
-  text-align: center;
 }
 .contact-btn:hover {
   background-color: var(--secondary);
   color: var(--primary);
+}
+.con-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-toggler-icon {
+  color: white;
 }
 /*------- BANNER -------*/
 .banner {
@@ -100,26 +108,63 @@
   align-items: center;
   text-align: center;
   font-size: 400px;
-  margin-top: 50px;
+  margin-top: 60px;
   color: var(--primary-light);
   font-family: "Kalam", cursive;
 }
 
-/*------- ABOUT -------*/
+/*-------------- ABOUT -----------*/
 .about {
+  margin-top: 80px;
   color: var(--primary);
   justify-content: center;
   align-items: center;
   text-align: center;
   font-weight: 900;
 }
-.about::after {
+.about-h1::after {
   content: "";
   display: block;
   background-color: var(--primary);
-  height: 2px;
-  width: 100px;
+  height: 3px;
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7px;
 }
+.about-content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about-para {
+  font-family: "Kalam", cursive;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/*------- MY SKILLS -------*/
+.my-skills {
+  margin-top: 120px;
+  color: var(--primary);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 900;
+}
+.my-skills-h1::after {
+  content: "";
+  display: block;
+  background-color: var(--primary);
+  height: 3px;
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
 @media (max-width: 425px) {
   body {
     overflow-x: none;
@@ -130,6 +175,19 @@
   .code-symbol {
     display: none;
   }
+  .intro-content {
+    font-size: 50px;
+  }
+  .navbar-toggler-icon {
+    margin-right: 20px;
+    color: white;
+  }
 }
-@media (min-width: 768) {
+@media (max-width: 768) {
+  body {
+    overflow-x: none;
+  }
+  .code-symbol {
+    display: none !important;
+  }
 }
