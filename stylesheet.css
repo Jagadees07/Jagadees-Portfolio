@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 ::selection {
   background-color: var(--secondary);
@@ -25,6 +26,7 @@
   font-size: 18px;
   font-weight: 400;
   margin-right: 15px;
+  font-family: "Poppins", sans-serif;
 }
 .nav-link:hover {
   color: var(--secondary);
@@ -39,7 +41,7 @@
 }
 .nav-link:hover::after {
   transform: scaleX(1);
-  color: white !important;
+  color: white;
 }
 .contact-btn {
   border: 2px solid var(--secondary);
@@ -92,7 +94,7 @@
   background-color: var(--secondary);
   color: var(--primary);
 }
-.code-symbol {
+/* .code-symbol {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,8 +103,23 @@
   margin-top: 50px;
   color: var(--primary-light);
   font-family: "Kalam", cursive;
-}
+} */
 
+/*------- ABOUT -------*/
+.about {
+  color: var(--primary);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 900;
+}
+.about::after {
+  content: "";
+  display: block;
+  background-color: var(--primary);
+  height: 2px;
+  width: 100px;
+}
 @media (min-width: 425px) {
   body {
     overflow-x: none;
