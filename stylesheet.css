@@ -13,6 +13,14 @@
   background-color: var(--secondary);
   color: var(--primary);
 }
+html::-webkit-scrollbar-track {
+  background-color: var(--primary);
+  border-radius: 10px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 10px;
+}
 
 /*-------- NAVBAR ---------*/
 .navbar {
@@ -73,6 +81,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
 }
 .intro-content {
   font-family: "Kalam", cursive;
@@ -133,8 +142,11 @@
   margin-top: 7px;
 }
 .about-content {
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 50px;
+}
+.about-img img {
+  width: 250px;
 }
 .about-para {
   font-family: "Kalam", cursive;
@@ -142,7 +154,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 40px;
+}
+.about-si {
+  background-color: var(--primary-light);
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50%;
+}
+.about-si:hover {
+  color: var(--secondary);
 }
 
 /*------- MY SKILLS -------*/
@@ -165,6 +189,40 @@
   margin-top: 10px;
 }
 
+/*------- PROJECTS -------*/
+
+.projects {
+  margin-top: 120px;
+  color: var(--primary);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 900;
+}
+.projects-h1::after {
+  content: "";
+  display: block;
+  background-color: var(--primary);
+  height: 3px;
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+}
+.web-1 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.web-2 {
+  margin-right: 20px;
+}
 @media (max-width: 425px) {
   body {
     overflow-x: none;
