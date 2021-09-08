@@ -19,6 +19,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&display=swap" rel="stylesheet">
 
+    <!-- LINK FOR SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+
     <title>Jagadees</title>
   </head>
   <body>
@@ -73,7 +77,7 @@
                         Download CV
                     </button>
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-sm-6 symbol">
                     <h1 class="code-symbol">
                         &lt;/&gt;
                     </h1>
@@ -104,10 +108,18 @@
                         natus molestias est eos tenetur sit.
                     </p>  
                     <div class="about-icons">
-                        <a href="#"><i class="fab fa-instagram about-si"></i></a>
-                        <a href="#"><i class="fab fa-twitter about-si"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in about-si"></i></a>
-                        <a href="#"><i class="fab fa-github about-si"></i></a>
+                        <a href="#">
+                          <i class="fab fa-instagram about-si"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fab fa-twitter about-si"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fab fa-linkedin-in about-si"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fab fa-github about-si"></i>
+                        </a>
                     </div>  
                 </div> 
             </div>   
@@ -125,26 +137,66 @@
     <section class="projects">
         <h1 class="projects-h1">Projects</h1>
 
-        <!-- <div class="row projects-content">
-            <div class="col-sm-4">
-              <img src="assets/images/webpage-placeholder.jpg" 
-              alt="WEBISITE-1" class="project web-1">
-            </div>
-            <div class="col-sm-4">
-              <img src="assets/images/webpage-placeholder.jpg"
-              alt="WEBISITE-2" class="project web-2">
-            </div>
-            <div class="col-sm-4">
-              <img src="assets/images/webpage-placeholder.jpg" -->
-              <!-- alt="WEBISITE-3" class="project web-3">
-            </div>
-        </div> -->
+        <div class="row">
+          <div class="col-sm-4">
+            
+          </div>
+          <div class="col-sm-4">
+
+          </div>
+          <div class="col-sm-4">
+
+          </div>
+        </div>
       </section>
 
+    <!------------------------- TESTIMONIAL   
+      <section class="testimonial">
+        <h1 class="testimonial-h1">
+          Testimonial
+        </h1>
+        <div class="testimonial-content">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-box">
+                  <div class="review review-1">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Atque porro commodi iste id, repellendus labore,
+                      quos eius cupiditate rem tempore obcaecati ipsa quas quasi facere
+                      reprehenderit ratione maxime incidunt aspernatur.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      ----------------------->
 
+    <!-- SCRIPT FOR TESTIMONIAL -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-
-
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflow: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      });
+    </script>
 
     <!-- SCRIPT FOR PROGRESS-BAR   -->
       <!-- <script>
