@@ -208,7 +208,38 @@ html::-webkit-scrollbar-thumb {
   margin-right: auto;
   margin-top: 10px;
 }
-
+.project-content {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-content1 {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pro-website {
+  width: 350px;
+  height: 250px;
+  margin-bottom: 20px;
+}
+.see-more-btn {
+  background-color: var(--primary);
+  color: var(--secondary);
+  width: 250px;
+  height: 47px;
+  font-size: 21px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.see-more-btn:hover {
+  border: 3px solid var(--secondary);
+  color: var(--secondary);
+  background-color: white;
+}
 /*------- TESTIMONIAL 
 .testimonial {
   margin-top: 50px;
@@ -270,7 +301,7 @@ html::-webkit-scrollbar-thumb {
     overflow-x: none;
   }
   .code-symbol {
-    font-size: 250px;
+    font-size: 280px;
     margin-right: 50px;
     margin-top: 180px;
   }
