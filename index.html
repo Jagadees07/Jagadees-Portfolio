@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="stylesheet.css">
 
     <!-- LINK FOR FONT-AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- LINK FOR FONT-FAMILY -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,8 +35,7 @@
           <a class="navbar-brand" href="#"><h1>J</h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
-                jaga
-                <i class="fal fa-ellipsis-v-alt"></i>
+                <i class="fas fa-ellipsis-v-alt"></i>
             </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -55,7 +57,9 @@
               </li>
               <li class="nav-item">
                   <div class="con-btn">
-                    <button class="btn contact-btn" type="button">Contact me</button>
+                    <a href="#contact">
+                      <button class="btn contact-btn" type="button">Contact me</button>
+                    </a>  
                   </div>
               </li>
             </ul>
@@ -130,8 +134,6 @@
       <section class="my-skills">
         <h1 class="my-skills-h1">My Skills</h1>
       </section>
-
-
 
     <!------------------------- PROJECTS ----------------------->
     <section class="projects" id="projects">
@@ -215,6 +217,55 @@
         </div>
       </section>
       ----------------------->
+    <!------------------------- CONTACT ME ----------------------->
+      <section class="contact" id="contact">
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+          <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        </svg>
+        <div>
+          <h1 class="contact-h1">
+            Contact me
+          </h1>
+          <form class="form">
+            <input class="user user-name" type="text" name="name" placeholder="Your Name" required>
+            <input class="user user-email" type="text" name="email" placeholder="Your Email" required>
+            <textarea 
+              rows="12" 
+              cols="52" 
+              placeholder="Your message"
+              class="user-message">
+            </textarea>  
+          </form>
+          <input type="submit" value="Submit" class="submit-btn">
+        </div>
+      </section>
+
+      <!--------------------- FOOTER ----------------------->
+      <section class="footer">
+          <h1 class="logo-footer">J</h1>
+          <div class="footer-icons">
+            <a href="https://www.instagram.com/jagadeesfullstackwebdeveloper7/" target="_blank">
+              <i class="fab fa-instagram footer-si"></i>
+            </a>
+            <a href="https://twitter.com/Jagadee51320865" target="_blank">
+              <i class="fab fa-twitter footer-si"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jagadees-k-8931a0216/" target="_blank">
+              <i class="fab fa-linkedin-in footer-si"></i>
+            </a>
+            <a href="https://github.com/Jagadees07" target="_blank">
+              <i class="fab fa-github footer-si"></i>
+            </a>
+        </div>  
+        <p class="copyrights">
+          <span style="color: #3d4653;">JAGADEES</span> 
+          <a href="#" style="color: #08fdd8; text-decoration: none;"> 
+            <img src="assets/images/copyright.png" alt="copyrights" width="22px">
+            2021</a>
+        </p>
+      </section>
+
+
 
     <!-- SCRIPT FOR TESTIMONIAL -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

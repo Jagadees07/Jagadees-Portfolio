@@ -232,7 +232,7 @@ html::-webkit-scrollbar-thumb {
   font-weight: 500;
   text-align: center;
   border-radius: 30px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 .see-more-btn:hover {
@@ -278,6 +278,99 @@ html::-webkit-scrollbar-thumb {
   height: 300px;
 }
 ---------*/
+
+/*------- CONTACT ME ---------*/
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #252934;
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 80px;
+}
+.contact-h1 {
+  margin-top: 65px;
+}
+.contact-h1::after {
+  content: "";
+  display: block;
+  background-color: white;
+  height: 3px;
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.form {
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+.user {
+  display: block;
+  background-color: #1e242c;
+  color: white;
+  width: 450px;
+  height: 45px;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+.user-message {
+  height: 150px;
+}
+.user-message {
+  background-color: #1e242c;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  width: auto;
+}
+.submit-btn {
+  background-color: var(--secondary);
+  color: var(--primary-light);
+  border: none;
+  padding: 10px 10px 10px 10px;
+  border-radius: 30px;
+  width: 130px;
+  font-weight: 700;
+  font-size: 17px;
+  margin-top: 30px;
+}
+/*------- FOOTER ---------*/
+.footer {
+  background-color: #1a1e23;
+  color: white;
+  width: 100%;
+  height: 40vh;
+  text-align: center;
+}
+.footer .logo-footer {
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-icons {
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-si {
+  color: white;
+  font-size: 29px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.copyrights {
+  margin-top: 50px;
+}
 @media (max-width: 425px) {
   body {
     overflow-x: none;
@@ -295,6 +388,9 @@ html::-webkit-scrollbar-thumb {
     margin-right: 20px;
     color: white;
   }
+  .user {
+    width: 320px;
+  }
 }
 @media (max-width: 768px) {
   body {
@@ -304,6 +400,9 @@ html::-webkit-scrollbar-thumb {
     font-size: 280px;
     margin-right: 50px;
     margin-top: 180px;
+  }
+  .user {
+    width: 420px;
   }
 }
 @media (min-width: 1024px) {
