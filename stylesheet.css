@@ -135,7 +135,7 @@ html::-webkit-scrollbar-thumb {
 .about-h1::after {
   content: "";
   display: block;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   height: 3px;
   width: 70px;
   margin-left: auto;
@@ -189,7 +189,7 @@ html::-webkit-scrollbar-thumb {
 .my-skills-h1::after {
   content: "";
   display: block;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   height: 3px;
   width: 70px;
   margin-left: auto;
@@ -210,7 +210,7 @@ html::-webkit-scrollbar-thumb {
 .projects-h1::after {
   content: "";
   display: block;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   height: 3px;
   width: 70px;
   margin-left: auto;
@@ -266,7 +266,7 @@ html::-webkit-scrollbar-thumb {
 .testimonial-h1::after {
   content: "";
   display: block;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   height: 3px;
   width: 70px;
   margin-left: auto;
@@ -377,7 +377,7 @@ html::-webkit-scrollbar-thumb {
   background-color: #1a1e23;
   color: white;
   width: 100%;
-  height: 40vh;
+  height: 45vh;
   text-align: center;
 }
 .footer .logo-footer {
@@ -392,13 +392,32 @@ html::-webkit-scrollbar-thumb {
 }
 .footer-si {
   color: white;
-  font-size: 29px;
+  border-radius: 50%;
+  padding: 10px 10px 10px 10px;
+  font-size: 30px;
   margin-top: 30px;
-  margin-left: 10px;
-  margin-right: 20px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.footer-si:hover {
+  background-color: var(--secondary);
+  transition: 0.3s;
+}
+.footer-si-insta:hover {
+  background-color: #d62977;
+}
+.footer-si-twitter:hover {
+  background-color: #1da1f2;
+}
+.footer-si-linkedin:hover {
+  background-color: #0077b5;
+}
+.footer-si-github:hover {
+  background-color: #4078c0;
 }
 .copyrights {
   margin-top: 50px;
+  margin-left: 50px;
 }
 .back-to-top {
   display: inline;
@@ -407,11 +426,10 @@ html::-webkit-scrollbar-thumb {
   display: flex;
   background-color: var(--secondary);
   color: var(--primary-light);
-  padding: 10px 10px 10px 10px;
+  padding: 10px 12px 10px 12px;
   border-radius: 50%;
   font-size: 20px;
   float: right;
-  margin-right: 20px;
 }
 @media (max-width: 425px) {
   body {
@@ -427,7 +445,6 @@ html::-webkit-scrollbar-thumb {
     font-size: 50px;
   }
   .navbar-toggler-icon {
-    margin-right: 20px;
     color: white;
   }
   .user {
