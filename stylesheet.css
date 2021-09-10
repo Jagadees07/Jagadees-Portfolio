@@ -63,6 +63,7 @@ html::-webkit-scrollbar-thumb {
 .contact-btn:hover {
   background-color: var(--secondary);
   color: var(--primary);
+  transition: 0.5s;
 }
 .con-btn {
   display: flex;
@@ -109,6 +110,7 @@ html::-webkit-scrollbar-thumb {
 .download-btn:hover {
   background-color: var(--secondary);
   color: var(--primary);
+  transition: 0.5s;
 }
 .code-symbol {
   display: flex;
@@ -171,7 +173,9 @@ html::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 .about-si:hover {
-  color: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--primary-light);
+  transition: 0.5s;
 }
 /*------- MY SKILLS -------*/
 .my-skills {
@@ -244,6 +248,7 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--secondary);
   color: var(--primary-light);
   border: none;
+  transition: 0.5s;
 }
 /*------- TESTIMONIAL 
 .testimonial {
@@ -365,6 +370,7 @@ html::-webkit-scrollbar-thumb {
   font-weight: 600;
   background-color: var(--secondary);
   color: var(--primary-light);
+  transition: 0.5s;
 }
 /*------- FOOTER ---------*/
 .footer {
@@ -393,6 +399,19 @@ html::-webkit-scrollbar-thumb {
 }
 .copyrights {
   margin-top: 50px;
+}
+.back-to-top {
+  display: inline;
+}
+.fa-arrow-up {
+  display: flex;
+  background-color: var(--secondary);
+  color: var(--primary-light);
+  padding: 10px 10px 10px 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  float: right;
+  margin-right: 20px;
 }
 @media (max-width: 425px) {
   body {
