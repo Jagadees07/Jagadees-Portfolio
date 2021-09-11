@@ -53,7 +53,7 @@
                 <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonial</a>
+                <a class="nav-link" href="#testimonial">Testimonial</a>
               </li>
               <li class="nav-item">
                   <div class="con-btn">
@@ -148,12 +148,12 @@
         <h1 class="projects-h1">Projects</h1>
         <div class="row container project-content">
           <div class="col-sm-4 project1">
-            <a href="#">
+            <div class="project-img">
               <img src="assets/images/webpage-placeholder.jpg" 
               alt="WEB-1" 
               class="img-responsive img-fluid pro-website"
               data-bs-toggle="modal" data-bs-target="#web1">
-            </a>  
+            </div>  
             <div class="modal fade" id="web1" tabindex="-1" aria-labelledby="web1ModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -172,12 +172,12 @@
             </div>
           </div>
           <div class="col-sm-4 project2">
-            <a href="#">
+            <div class="project-img">
               <img src="assets/images/webpage-placeholder.jpg"
               alt="WEB-2" 
               class="img-responsive img-fluid pro-website"
               data-bs-toggle="modal" data-bs-target="#web2">
-            </a> 
+            </div> 
             <div class="modal fade" id="web2" tabindex="-1" aria-labelledby="web2ModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -196,12 +196,12 @@
             </div>
           </div>
           <div class="col-sm-4 project3">
-            <a href="#">
+            <div class="project-img">
               <img src="assets/images/webpage-placeholder.jpg"
               alt="WEB-3"
               class="img-responsive img-fluid pro-website"
               data-bs-toggle="modal" data-bs-target="#web3">
-            </a> 
+            </div> 
             <div class="modal fade" id="web3" tabindex="-1" aria-labelledby="web3ModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -223,12 +223,12 @@
 
         <div class="row container project-content1">
           <div class="col-sm-4">
-            <a href="#">
+            <div class="project-img">
               <img src="assets/images/webpage-placeholder.jpg" 
               alt="WEB-4" 
               class="img-responsive img-fluid pro-website"
               data-bs-toggle="modal" data-bs-target="#web4">
-            </a> 
+            </div> 
             <div class="modal fade" id="web4" tabindex="-1" aria-labelledby="web4ModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -247,12 +247,12 @@
             </div>  
           </div>
           <div class="col-sm-4">
-            <a href="#">
+            <div class="project-img">
               <img src="assets/images/webpage-placeholder.jpg"
               alt="WEB-5" 
               class="img-responsive img-fluid pro-website"
               data-bs-toggle="modal" data-bs-target="#web5">
-            </a> 
+            </div> 
             <div class="modal fade" id="web5" tabindex="-1" aria-labelledby="web5ModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -271,12 +271,12 @@
             </div>
           </div>
           <div class="col-sm-4">
-            <a href="#">
+            <div class="project-img">
               <img src="assets/images/webpage-placeholder.jpg"
               alt="WEB-6"
               class="img-responsive img-fluid pro-website"
               data-bs-toggle="modal" data-bs-target="#web6">
-            </a> 
+            </div> 
             <div class="modal fade" id="web6" tabindex="-1" aria-labelledby="web6ModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -302,31 +302,120 @@
         </a>  
       </section>
 
-    <!------------------------- TESTIMONIAL   
-      <section class="testimonial">
+    <!------------------------- TESTIMONIAL -----------------------> 
+      <section class="testimonial" id="testimonial">
         <h1 class="testimonial-h1">
           Testimonial
         </h1>
-        <div class="testimonial-content">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-box">
-                  <div class="review review-1">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                      Atque porro commodi iste id, repellendus labore,
-                      quos eius cupiditate rem tempore obcaecati ipsa quas quasi facere
-                      reprehenderit ratione maxime incidunt aspernatur.
-                    </p>
+        <div id="carouselExampleIndicators" class="testimonials carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"
+            style="background-color: #1e242c;"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+            style="background-color: #1e242c;"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row all-cards">
+                <div class="col-sm-4 card card-1">
+                  <div class="person-img">
+                    <img src="assets/images/person-1.png" class="img-fluid img-responsive d-block" width="50%" alt="Person 1">
+                  </div>
+                  <div class="person-name">
+                    <h3>John Doe</h3>
+                  </div>
+                  <div class="person-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Delectus aliquam tenetur dignissimos magni dolore Obcaecati.
+                  </div>
+                </div>
+                <div class="col-sm-4 card card-2">
+                  <div class="person-img">
+                    <img src="assets/images/person-1.png" class="img-fluid img-responsive d-block" width="50%" alt="Person 2">
+                  </div>
+                  <div class="person-name">
+                    <h3>John Doe</h3>
+                  </div>
+                  <div class="person-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Delectus aliquam tenetur dignissimos magni dolore Obcaecati.
+                  </div>
+                </div>
+                <div class="col-sm-4 card card-3">
+                  <div class="person-img">
+                    <img src="assets/images/person-1.png" class="img-fluid img-responsive d-block" width="50%" alt="Person 3">
+                  </div>
+                  <div class="person-name">
+                    <h3>John Doe</h3>
+                  </div>
+                  <div class="person-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Delectus aliquam tenetur dignissimos magni dolore Obcaecati.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row all-cards">
+                <div class="col-sm-4 card card-1">
+                  <div class="person-img">
+                    <img src="assets/images/person-1.png" class="img-fluid img-responsive d-block" width="50%" alt="Person 4">
+                  </div>
+                  <div class="person-name">
+                    <h3>John Doe</h3>
+                  </div>
+                  <div class="person-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Delectus aliquam tenetur dignissimos magni dolore Obcaecati.
+                  </div>
+                </div>
+                <div class="col-sm-4 card card-5">
+                  <div class="person-img">
+                    <img src="assets/images/person-1.png" class="img-fluid img-responsive d-block" width="50%" alt="Person 5">
+                  </div>
+                  <div class="person-name">
+                    <h3>John Doe</h3>
+                  </div>
+                  <div class="person-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Delectus aliquam tenetur dignissimos magni dolore Obcaecati.
+                  </div>
+                </div>
+                <div class="col-sm-4 card card-6">
+                  <div class="person-img">
+                    <img src="assets/images/person-1.png" class="img-fluid img-responsive d-block" width="50%" alt="Person 6">
+                  </div>
+                  <div class="person-name">
+                    <h3>John Doe</h3>
+                  </div>
+                  <div class="person-text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                      Delectus aliquam tenetur dignissimos magni dolore Obcaecati.
+                    </p>  
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style= "filter: opacity(1);">
+            <span class="carousel-control-prev-icon" 
+            aria-hidden="true">
+            <i class="fas fa-chevron-left"
+            style= "filter: opacity(1); background-color: #1e242c; color: white; border-radius: 50%; padding: 15px 17px 15px 17px;"></i>
+          </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon"
+             aria-hidden="true">
+             <i class="fas fa-chevron-right"
+             style= "filter: opacity(1); background-color: #1e242c; color: white; border-radius: 50%; padding: 15px 17px 15px 17px;"></i>
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
-      ----------------------->
+      
     <!------------------------- CONTACT ME ----------------------->
       <section class="contact" id="contact">
         <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
@@ -391,29 +480,6 @@
         </p>
       </section>
 
-
-
-    <!-- SCRIPT FOR TESTIMONIAL -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflow: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      });
-    </script>
 
     <!-- SCRIPT FOR PROGRESS-BAR   -->
       <!-- <script>
