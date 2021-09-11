@@ -16,26 +16,29 @@
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
     <!-- LINK FOR FONT-FAMILY -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&display=swap" rel="stylesheet">
 
-    <!-- LINK FOR SWIPER -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <!-- LINK FOR JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <!-- LINK FOR CIRCLE PROGRESS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 
     <title>Jagadees</title>
   </head>
   <body>
     <!----------------------- NAVBAR   ------------------------->
-    <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#"><h1>J</h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="color: white; font-size: 30px;">
-                <i class="fa fa-bars"></i>
+            <span class="navbar-toggler-icon" style="color: white; font-size: 40px;">
+              <!-- <i class="fas fa-bars"></i> -->
+              <!-- <i class="fas fa-align-right"></i> -->
+              <i class="fab fa-battle-net"></i>
             </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,7 +50,7 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">My Skills</a>
+                <a class="nav-link" href="#my-skills">My Skills</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
@@ -66,7 +69,31 @@
           </div>
         </div>
       </nav>
-      
+      <!-- <script>
+        const navbar = document.querySelector(".navbar");
+        const sectionOne = document.querySelector(".banner");
+
+        const sectionOneOptions = {
+          rootMargin = "-200px 0px 0px 0px"
+        };
+        
+        const sectionOneObserver = new IntersectionObserver 
+        (function(
+          entries,
+          sectionOneObserver
+        ) {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+              navbar.classList.add("nav-scrolled");
+            } else {
+              navbar.classList.remove("nav-scrolled");
+            }
+          });
+        },
+        sectionOneOptions);
+
+        sectionOneObserver.observe(sectionOne);
+      </script> -->
     <!------------------------- BANNER ----------------------->
       <section class="banner" id="banner">
           <div class="container">
@@ -139,9 +166,95 @@
       </section>
 
     <!------------------------- MY SKILLS ----------------------->
-      <section class="my-skills">
+      <section class="my-skills" id="my-skills">
         <h1 class="my-skills-h1">My Skills</h1>
+        <div class="container row skills-section">
+          <div class="col-sm-4">
+            <div class="circle html">
+              <div class="bar"></div>
+              <div class="box">
+                <span></span>
+              </div>
+            </div>
+            <div class="lang">
+              HTML & CSS
+            </div>
+          </div>  
+          <div class="col-sm-4">
+            <div class="circle bootstrap">
+              <div class="bar"></div>
+              <div class="box">
+                <span></span>
+              </div>
+            </div>
+            <div class="lang">
+              Bootstrap
+            </div>
+          </div>  
+          <div class="col-sm-4">
+            <div class="circle js">
+              <div class="bar"></div>
+              <div class="box">
+                <span></span>
+              </div>
+            </div>
+            <div class="lang">
+              JavaScript
+            </div>
+          </div>  
+        </div>
+        <div class="container row skills-section2">
+          <div class="col-sm-5">
+            <div class="circle sass">
+              <div class="bar"></div>
+              <div class="box">
+                <span></span>
+              </div>
+            </div>
+            <div class="lang">
+              SCSS
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="circle figma">
+              <div class="bar"></div>
+              <div class="box">
+                <span></span>
+              </div>
+            </div>
+            <div class="lang">
+              Figma
+            </div>
+          </div>
+        </div>    
       </section>
+      <script>
+        let options = {
+          startAngle: -1.55,
+          size: 150,
+          value: 0.80,
+          fill: {color: "#08fdd8"}
+        }
+        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+        function(event, progress, stepValue){
+          $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%")
+        })
+        $(".html .bar").circleProgress({
+          value: 0.85,
+        })
+        $(".bootstrap .bar").circleProgress({
+          value: 0.80,
+        })
+        $(".js .bar").circleProgress({
+          value: 0.50,
+        })
+        $(".sass .bar").circleProgress({
+          value: 0.70,
+        })
+        $(".figma .bar").circleProgress({
+          value: 0.80,
+        })
+      </script>
 
     <!------------------------- PROJECTS ----------------------->
     <section class="projects" id="projects">
