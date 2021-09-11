@@ -299,8 +299,6 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--primary);
   color: var(--secondary);
 }
-.card:before {
-}
 .person-img {
   display: flex;
   justify-content: center;
