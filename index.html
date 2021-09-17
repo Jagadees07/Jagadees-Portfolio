@@ -27,6 +27,8 @@
     <!-- LINK FOR CIRCLE PROGRESS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+
     <title>Jagadees</title>
   </head>
   <body>
@@ -173,7 +175,7 @@
       <section class="my-skills" id="my-skills">
         <h1 class="my-skills-h1">My Skills</h1>
         <div class="container row skills-section">
-          <div class="col-sm-4">
+          <!-- <div class="col-sm-4">
             <div class="circle html">
               <div class="bar"></div>
               <div class="box">
@@ -181,7 +183,26 @@
               </div>
             </div>
             <div class="lang">
-              HTML & CSS
+              HTML
+            </div>
+          </div> -->
+          <div class="col-sm-4">
+            <div class="ui-widget">
+              <div class="ui-value">
+                80%
+              </div>
+                <div class="ui-label">HTML</div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="circle css">
+              <div class="bar"></div>
+              <div class="box">
+                <span></span>
+              </div>
+            </div>
+            <div class="lang">
+              CSS
             </div>
           </div>  
           <div class="col-sm-4">
@@ -194,8 +215,10 @@
             <div class="lang">
               Bootstrap
             </div>
-          </div>  
-          <div class="col-sm-4">
+          </div>
+        </div>
+        <div class="container row skills-section2">
+          <div class="col-sm-5">
             <div class="circle js">
               <div class="bar"></div>
               <div class="box">
@@ -204,19 +227,6 @@
             </div>
             <div class="lang">
               JavaScript
-            </div>
-          </div>  
-        </div>
-        <div class="container row skills-section2">
-          <div class="col-sm-5">
-            <div class="circle sass">
-              <div class="bar"></div>
-              <div class="box">
-                <span></span>
-              </div>
-            </div>
-            <div class="lang">
-              SCSS
             </div>
           </div>
           <div class="col-sm-5">
@@ -246,17 +256,17 @@
         $(".html .bar").circleProgress({
           value: 0.85,
         })
+        $(".css .bar").circleProgress({
+          value: 0.80,
+        })
         $(".bootstrap .bar").circleProgress({
           value: 0.80,
         })
         $(".js .bar").circleProgress({
           value: 0.50,
         })
-        $(".sass .bar").circleProgress({
-          value: 0.70,
-        })
         $(".figma .bar").circleProgress({
-          value: 0.80,
+          value: 0.90,
         })
       </script>
 

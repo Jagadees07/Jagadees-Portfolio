@@ -188,7 +188,7 @@ html {
 }
 /*------- MY SKILLS -------*/
 .my-skills {
-  margin-top: 120px;
+  margin-top: 80px;
   color: var(--primary);
   justify-content: center;
   align-items: center;
@@ -209,6 +209,21 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+}
+.ui-widget {
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  margin: 1.5rem;
+  border: 0.9rem solid var(--secondary);
+  text-align: center;
+  border-radius: 9rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-left-color: #08fdd8;
+  border-top-color: #04a890;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  box-sizing: border-box;
 }
 .skills-section {
   margin-left: auto;
@@ -267,7 +282,7 @@ html {
 /*------- PROJECTS -------*/
 
 .projects {
-  margin-top: 100px;
+  margin-top: 50px;
   color: var(--primary);
   justify-content: center;
   align-items: center;
@@ -288,7 +303,7 @@ html {
   margin-top: 10px;
 }
 .project-content {
-  margin-top: 70px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -325,7 +340,7 @@ html {
 }
 /*------- TESTIMONIAL ---------*/
 .testimonial {
-  margin-top: 100px;
+  margin-top: 80px;
   color: var(--primary);
   justify-content: center;
   align-items: center;
@@ -350,7 +365,7 @@ html {
   margin-top: 7px;
 }
 .testimonials {
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 70px;
 }
 .all-cards {
@@ -395,7 +410,7 @@ html {
   min-height: 100vh;
   background-color: #252934;
   color: white;
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -550,6 +565,7 @@ html {
   }
   .navbar-toggler-icon {
     color: white;
+    margin-top: 12px;
   }
   .user {
     width: 320px;
@@ -589,6 +605,9 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .navbar-toggler-icon {
+    margin-top: 15px;
   }
 }
 @media (min-width: 1024px) {
