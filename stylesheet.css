@@ -27,7 +27,7 @@ html {
 
 /*-------- NAVBAR ---------*/
 .navbar {
-  background: var(--primary);
+  background: rgba(30, 36, 44, 0.8);
 }
 .navbar-brand {
   color: white;
