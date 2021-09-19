@@ -210,21 +210,6 @@ html {
   margin-right: auto;
   margin-top: 10px;
 }
-.ui-widget {
-  display: inline-block;
-  width: 10rem;
-  height: 10rem;
-  margin: 1.5rem;
-  border: 0.9rem solid var(--secondary);
-  text-align: center;
-  border-radius: 9rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-left-color: #08fdd8;
-  border-top-color: #04a890;
-  border-right-color: #fff;
-  border-bottom-color: #fff;
-  box-sizing: border-box;
-}
 .skills-section {
   margin-left: auto;
   margin-right: auto;
@@ -313,12 +298,29 @@ html {
   margin-right: auto;
 }
 .pro-website {
-  width: 350px;
-  height: 250px;
+  /* width: 300px;
+  height: 250px; */
   margin-bottom: 20px;
 }
 .project-img {
   cursor: pointer;
+  object-fit: cover;
+}
+.project-in-modal {
+  margin-top: 10px;
+}
+.view-website-btn {
+  background-color: var(--secondary);
+  color: var(--primary);
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  width: 150px;
+  height: 50px;
+}
+.view-website-btn:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 .see-more-btn {
   color: var(--secondary);
@@ -338,6 +340,7 @@ html {
   border: none;
   transition: 0.5s;
 }
+
 /*------- TESTIMONIAL ---------*/
 .testimonial {
   margin-top: 80px;
