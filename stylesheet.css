@@ -24,6 +24,17 @@ html::-webkit-scrollbar-thumb {
 html {
   scroll-behavior: smooth;
 }
+.my-name {
+  color: var(--secondary);
+  font-style: normal;
+  font-family: "Kalam", cursive;
+}
+em {
+  color: var(--secondary);
+  font-style: normal;
+  /* text-shadow: 0 0 0px #1a1e23, 0 0 0px #1a1e23; */
+  font-weight: bolder;
+}
 
 /*-------- NAVBAR ---------*/
 .navbar {
@@ -195,7 +206,7 @@ html {
   text-align: center;
   font-weight: 900;
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .my-skills-h1 {
   font-weight: 500;
@@ -267,7 +278,7 @@ html {
 /*------- PROJECTS -------*/
 
 .projects {
-  margin-top: 50px;
+  margin-top: 100px;
   color: var(--primary);
   justify-content: center;
   align-items: center;
@@ -298,9 +309,11 @@ html {
   margin-right: auto;
 }
 .pro-website {
-  /* width: 300px;
-  height: 250px; */
   margin-bottom: 20px;
+}
+.pro-website:hover {
+  transition: 0.3s;
+  box-shadow: 5px 10px 10px #2f3338;
 }
 .project-img {
   cursor: pointer;
@@ -351,7 +364,7 @@ html {
   font-weight: 900;
   position: relative;
   width: 100%;
-  min-height: 120vh;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 .testimonial-h1 {
@@ -630,6 +643,6 @@ html {
     align-items: center;
   }
   .testimonial {
-    min-height: 100vh;
+    min-height: 70vh;
   }
 }
