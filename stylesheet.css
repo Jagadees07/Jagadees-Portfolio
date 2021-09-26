@@ -35,7 +35,6 @@ em {
   /* text-shadow: 0 0 0px #1a1e23, 0 0 0px #1a1e23; */
   font-weight: bolder;
 }
-
 /*-------- NAVBAR ---------*/
 .navbar {
   background: rgba(30, 36, 44, 0.8);
@@ -147,10 +146,9 @@ em {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-weight: 900;
 }
 .about-h1 {
-  font-weight: 500;
+  font-weight: 600;
 }
 .about-h1::after {
   content: "";
@@ -170,12 +168,16 @@ em {
   width: 250px;
 }
 .about-para {
-  font-family: "Kalam", cursive;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 15px;
+  text-align: center;
   margin-top: 40px;
+}
+.about-para h5 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.about-para p {
+  margin-top: 15px;
 }
 .about-icons {
   display: flex;
@@ -185,7 +187,7 @@ em {
 .about-si {
   background-color: var(--primary-light);
   color: white;
-  font-size: 25px;
+  font-size: 22px;
   margin-top: 10px;
   margin-right: 15px;
   padding: 10px 10px 10px 10px;
@@ -209,7 +211,7 @@ em {
   /* min-height: 100vh; */
 }
 .my-skills-h1 {
-  font-weight: 500;
+  font-weight: 600;
 }
 .my-skills-h1::after {
   content: "";
@@ -278,7 +280,7 @@ em {
 /*------- PROJECTS -------*/
 
 .projects {
-  margin-top: 100px;
+  margin-top: 70px;
   color: var(--primary);
   justify-content: center;
   align-items: center;
@@ -286,7 +288,7 @@ em {
   font-weight: 900;
 }
 .projects-h1 {
-  font-weight: 500;
+  font-weight: 600;
 }
 .projects-h1::after {
   content: "";
@@ -309,7 +311,10 @@ em {
   margin-right: auto;
 }
 .pro-website {
+  border-radius: 8px;
   margin-bottom: 20px;
+  width: 542px;
+  height: 165px;
 }
 .pro-website:hover {
   transition: 0.3s;
@@ -338,9 +343,9 @@ em {
 .see-more-btn {
   color: var(--secondary);
   background-color: var(--primary);
-  width: 250px;
+  width: 200px;
   height: 47px;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 500;
   text-align: center;
   border-radius: 30px;
@@ -356,7 +361,6 @@ em {
 
 /*------- TESTIMONIAL ---------*/
 .testimonial {
-  margin-top: 80px;
   color: var(--primary);
   justify-content: center;
   align-items: center;
@@ -368,7 +372,9 @@ em {
   overflow-x: hidden;
 }
 .testimonial-h1 {
-  font-weight: 500;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 600;
 }
 .testimonial-h1::after {
   content: "";
@@ -381,7 +387,7 @@ em {
   margin-top: 7px;
 }
 .testimonials {
-  margin-top: 70px;
+  margin-top: 40px;
   margin-bottom: 70px;
 }
 .all-cards {
@@ -392,10 +398,10 @@ em {
 }
 .card {
   width: 300px;
-  height: 350px;
+  height: 400px;
   margin-right: 30px;
   background-color: var(--primary-light);
-  color: rgb(153, 153, 153);
+  color: var(--secondary);
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -407,19 +413,50 @@ em {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 210px;
+  height: 210px;
+}
+.position {
+  margin-top: 10px;
+  color: #82f0df;
 }
 .person-name {
   margin-top: 10px;
 }
+/* 
+.person-name h3 {
+} */
 .person-text {
   font-weight: 200;
+  font-size: 14px;
+  color: rgb(238, 238, 238);
+}
+.vishal-comment {
+  margin-top: 10px;
+}
+.sasi-comment {
+  margin-top: 10px;
 }
 .carousel-indicators {
   left: 0;
   top: auto;
   bottom: -70px;
 }
+.testimonial-comments {
+  margin-bottom: 30px;
+}
+.vishal,
+.sasi {
+  border-radius: 100%;
+}
+/*------- TESTIMONIAL FOR MOBILE ---------*/
+.tetsimonial-for-mobile {
+  display: none;
+}
+
 /*------- CONTACT ME ---------*/
 .contact {
   width: 100%;
@@ -510,7 +547,7 @@ em {
   background-color: #1a1e23;
   color: white;
   width: 100%;
-  min-height: 45vh;
+  min-height: 43vh;
   text-align: center;
 }
 .footer .logo-footer {
@@ -528,7 +565,7 @@ em {
   border-radius: 50%;
   padding: 10px 10px 10px 10px;
   font-size: 30px;
-  margin-top: 30px;
+  margin-top: 35px;
   margin-left: 5px;
   margin-right: 10px;
 }
@@ -549,7 +586,7 @@ em {
   background-color: #4078c0;
 }
 .copyrights {
-  margin-top: 50px;
+  margin-top: 35px;
   margin-left: 50px;
 }
 .back-to-top {
@@ -563,8 +600,7 @@ em {
   border-radius: 50%;
   font-size: 20px;
   float: right;
-  bottom: 30px;
-  right: 30px;
+  margin-right: 20px;
 }
 @media (max-width: 425px) {
   body {
@@ -572,6 +608,9 @@ em {
   }
   .navbar-brand {
     margin-left: 20px;
+  }
+  .con-btn {
+    margin-bottom: 8px;
   }
   .code-symbol {
     display: none;
@@ -596,9 +635,49 @@ em {
     justify-content: center;
     align-items: center;
   }
+}
+@media (max-width: 662px) {
   .testimonial {
     min-height: 170vh;
+    display: none;
+    overflow-x: none;
   }
+  .tetsimonial-for-mobile {
+    display: block;
+    margin-top: 30px;
+  }
+  .person-name h2 {
+    color: var(--secondary);
+    font-weight: bold;
+  }
+  .person-name h6 {
+    color: rgb(91, 219, 206);
+  }
+  .card-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: var(--primary);
+    color: rgb(209, 209, 209);
+    height: 420px;
+  }
+  .person-text-m {
+    width: 280px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .person-img {
+    width: 250px;
+    height: 250px;
+  }
+  /* .testimonial-persons-comment {
+    margin-bottom: 20px;
+  } */
 }
 @media (max-width: 768px) {
   body {
