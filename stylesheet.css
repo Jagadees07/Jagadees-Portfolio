@@ -473,7 +473,17 @@ em {
   font-weight: 400;
   margin-top: 10px;
 }
-
+.manik {
+  border-radius: 100%;
+}
+.manik-testimonial {
+  /* margin-top: -80px; */
+}
+.manik-comment {
+  color: white;
+  font-weight: 400;
+  margin-top: 10px;
+}
 /*------- TESTIMONIAL FOR MOBILE ---------*/
 .tetsimonial-for-mobile {
   display: none;
@@ -630,6 +640,9 @@ em {
   }
   .navbar-brand {
     margin-left: 20px;
+  }
+  .navbar-toggler {
+    padding: 0;
   }
   .con-btn {
     margin-bottom: 8px;
