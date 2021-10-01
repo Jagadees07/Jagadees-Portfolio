@@ -434,11 +434,24 @@ em {
   font-size: 14px;
   color: rgb(238, 238, 238);
 }
+.vishal {
+  border-radius: 100%;
+}
 .vishal-comment {
   margin-top: 10px;
+  font-size: 14px;
+}
+.sasi-anna {
+  margin-bottom: 37px;
+}
+.sasi {
+  width: 92px;
+  border-radius: 100%;
 }
 .sasi-comment {
   margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
 }
 .carousel-indicators {
   left: 0;
@@ -448,10 +461,19 @@ em {
 .testimonial-comments {
   margin-bottom: 30px;
 }
-.vishal,
-.sasi {
+.sanjay {
   border-radius: 100%;
+  margin-top: -95px;
 }
+.sanjay-testimonial {
+  margin-top: -80px;
+}
+.sanjay-comment {
+  color: white;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
 /*------- TESTIMONIAL FOR MOBILE ---------*/
 .tetsimonial-for-mobile {
   display: none;
@@ -678,6 +700,20 @@ em {
   /* .testimonial-persons-comment {
     margin-bottom: 20px;
   } */
+  .sasi {
+    width: 120px;
+  }
+  .sanjay {
+    border-radius: 100%;
+    margin-top: -10px;
+    width: 125px;
+  }
+  .sanjay-testimonial {
+    margin-top: 10px;
+  }
+  .sanjay-comment {
+    color: white;
+  }
 }
 @media (max-width: 768px) {
   body {
