@@ -730,7 +730,8 @@ em {
     margin-top: -10px;
     width: 125px;
   }
-  .sanjay-testimonial {
+  .sanjay-testimonial,
+  .prithiv-testimonial {
     margin-top: 10px;
   }
   .sanjay-comment {
