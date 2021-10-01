@@ -451,7 +451,7 @@ em {
 .sasi-comment {
   margin-top: 10px;
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
 }
 .carousel-indicators {
   left: 0;
@@ -476,10 +476,19 @@ em {
 .manik {
   border-radius: 100%;
 }
-.manik-testimonial {
-  /* margin-top: -80px; */
-}
 .manik-comment {
+  color: white;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.prithiv {
+  border-radius: 100%;
+  margin-top: -10px;
+}
+.prithiv-testimonial {
+  margin-bottom: 25px;
+}
+.prithiv-comment {
   color: white;
   font-weight: 400;
   margin-top: 10px;
