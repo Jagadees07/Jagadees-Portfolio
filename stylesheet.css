@@ -682,6 +682,9 @@ em {
   .user {
     width: 320px;
   }
+  .about-para {
+    margin-top: 20px;
+  }
   .about-icons {
     display: flex;
     justify-content: center;
