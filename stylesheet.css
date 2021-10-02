@@ -164,12 +164,19 @@ em {
   margin-top: 60px;
   margin-bottom: 50px;
 }
-.about-img img {
-  width: 250px;
+/* .my-photo {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-image: url(/assets/images/jagadees.jpg);
+} */
+.jagadees-img {
+  width: 230px;
+  height: 360px;
+  margin-top: -40px;
 }
 .about-para {
   font-size: 15px;
   text-align: center;
+  margin-right: 18px;
 }
 .about-para h5 {
   font-size: 25px;
