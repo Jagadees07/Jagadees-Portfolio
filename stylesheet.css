@@ -170,14 +170,14 @@ em {
 .about-para {
   font-size: 15px;
   text-align: center;
-  margin-top: 40px;
 }
 .about-para h5 {
   font-size: 25px;
   font-weight: bold;
 }
-.about-para p {
+.about-self {
   margin-top: 15px;
+  font-size: 16px;
 }
 .about-icons {
   display: flex;
@@ -311,7 +311,7 @@ em {
   margin-right: auto;
 }
 .pro-website {
-  border-radius: 8px;
+  border-radius: 5px;
   margin-bottom: 20px;
   width: 542px;
   height: 165px;
@@ -492,6 +492,12 @@ em {
   color: white;
   font-weight: 400;
   margin-top: 10px;
+}
+.dinesh {
+  border-radius: 100%;
+}
+.dinesh-testimonial {
+  margin-bottom: 20px;
 }
 /*------- TESTIMONIAL FOR MOBILE ---------*/
 .tetsimonial-for-mobile {
@@ -736,6 +742,12 @@ em {
   }
   .sanjay-comment {
     color: white;
+  }
+  .dinesh {
+    border-radius: 100%;
+  }
+  .dinesh-testimonial {
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 768px) {
